@@ -8,8 +8,8 @@ const sketch = () => {
 
   const points = [
     new Point({x: 200, y: 540}),
-    new Point({x: 400, y: 540, control: true}),
-    new Point({x: 8800, y: 540}),
+    new Point({x: 400, y: 300, control: true}),
+    new Point({x: 880, y: 540}),
   ];
   
 
@@ -30,7 +30,7 @@ const sketch = () => {
 canvasSketch(sketch, settings);
 
 class Point {
-  constructor({x, x, control = false}) {
+  constructor({x, y, control = false}) {
     this.x = x;
     this.y = y;
     this.control = control;
